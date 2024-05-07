@@ -40,29 +40,29 @@
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-const totalShoppingCart = 30;
-if (totalShoppingCart > 50) {
-  console.log("l'utente ha diritto alla spedizione gratuita");
-} else {
-  console.log("la spedizione consterà all'utente fisso pari a 10");
-}
-if (totalShoppingCart < 50) {
-  console.log("l'addebito totale è:", totalShoppingCart + 10);
-}
+// const totalShoppingCart = 30;
+// if (totalShoppingCart > 50) {
+//   console.log("l'utente ha diritto alla spedizione gratuita");
+// } else {
+//   console.log("la spedizione consterà all'utente fisso pari a 10");
+// }
+// if (totalShoppingCart < 50) {
+//   console.log("l'addebito totale è:", totalShoppingCart + 10);
+// }
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-const isBlackFridayToday = true;
-const discount = 0.2;
-const discountBlackFriday = totalShoppingCart * discount;
-if (totalShoppingCart > 50) {
-  console.log(totalShoppingCart - discountBlackFriday);
-} else if (totalShoppingCart <= 50) {
-  console.log("il totale con lo sconto applicato, è di", totalShoppingCart - discountBlackFriday + 10);
-}
+// const isBlackFridayToday = true;
+// const discount = 0.2;
+// const discountBlackFriday = totalShoppingCart * discount;
+// if (totalShoppingCart > 50) {
+//   console.log(totalShoppingCart - discountBlackFriday);
+// } else if (totalShoppingCart <= 50) {
+//   console.log("il totale con lo sconto applicato, è di", totalShoppingCart - discountBlackFriday + 10);
+// }
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -70,10 +70,10 @@ if (totalShoppingCart > 50) {
   Alla fine mostra il risultato in console.
 */
 
-const numeri = [5, 2, 7];
-console.log(numeri);
-numeri.sort();
-console.log(numeri);
+// const numeri = [5, 2, 7];
+// console.log(numeri);
+// numeri.sort();
+// console.log(numeri);
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -89,17 +89,16 @@ console.log(numeri);
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+// let val = 4;
+// if (val > 10) {
+//   console.log("Meno di 10");
+// } else if (val < 5) {
+//   console.log("Meno di 5");
+// } else {
+//   console.log("Uguale a 10 o maggiore");
+// }
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -111,29 +110,36 @@ console.log(numeri);
 //   skills: ["javascript", "html", "css"],
 // };
 // console.log(me.name);
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+// me.city = "Toronto";
+// console.log(me);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+// delete me.lastName;
+// console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+// me.skills.pop();
+// console.log(me);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+// const numeri = [];
+// numeri.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+// console.log(numeri);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+// numeri.pop();
+// console.log(numeri);
+// numeri.push(100);
+// console.log(numeri);
