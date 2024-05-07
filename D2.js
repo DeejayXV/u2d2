@@ -2,8 +2,6 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
@@ -70,16 +68,59 @@
   Alla fine mostra il risultato in console.
 */
 
-// const numeri = [5, 2, 7];
-// console.log(numeri);
-// numeri.sort();
-// console.log(numeri);
+let numero1 = 5;
+let numero2 = 2;
+let numero3 = 7;
+let primo;
+let secondo;
+let terzo;
+if (numero1 >= numero2) {
+  if (numero1 >= numero3) {
+    primo = numero1;
+    if (numero2 >= numero3) {
+      secondo = numero2;
+      terzo = numero3;
+    } else {
+      secondo = numero3;
+      terzo = numero2;
+    }
+  } else {
+    primo = numero3;
+    if (numero2 >= numero1) {
+      secondo = numero2;
+      terzo = numero1;
+    } else {
+      secondo = numero1;
+      terzo = numero2;
+    }
+  }
+} else {
+  if (numero2 >= numero3) {
+    primo = numero2;
+    if (numero1 >= numero3) {
+      secondo = numero1;
+      terzo = numero3;
+    } else {
+      secondo = numero3;
+      terzo = numero1;
+    }
+  } else {
+    primo = numero3;
+    secondo = numero2;
+    terzo = numero1;
+  }
+}
+console.log(primo, secondo, terzo);
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+// const lastName = "Baglio";
+// const numero= 3;
+// if (lastName)
+//   console.log(lastName)
+// /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
